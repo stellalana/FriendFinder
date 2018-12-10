@@ -1,0 +1,29 @@
+.carousel .slide {
+    margin: 0px;
+    width: 100vw;
+}
+
+.carousel-indicators {
+    margin-bottom: 100px;
+}
+
+.carousel-caption {
+    margin-bottom: 90px;
+    /* color: rgb(250, 21, 200); */
+    font-weight: bold;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+h5 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 30px;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 100px;
+    color: white;
+}
