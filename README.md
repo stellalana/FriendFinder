@@ -1,4 +1,4 @@
-# FriendFinder
+# KindredSpirits
 ## How to use!
 #### Link to the web app:
 https://kindred-spirits.herokuapp.com/
