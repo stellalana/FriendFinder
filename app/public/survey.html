@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kindred Spirits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- CSS sheet link -->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m10 l8">
+        <div class="card">
+          <!--Header-->
+          <div class="jumbotron card-content">
+          <span class="card-title"><h2>Kindred Spirits</h2></span>
+            <p>Where finding your best friend is as easy as answering just 10 absurd questions...</p>
+          </div>
+          <div class="card-action">
+            <!--Survey Form-->
+            <form role="form" id="new-friend">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="friend-name" type="text" class="validate" required="">
+                  <label for="friend-name">Your Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="friend-photo" type="text" class="validate" required="">
+                  <label for="friend-photo">Link to a picture of you</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q1">
+                    <option value="" disabled selected>What is your favorite color?</option>
+                    <option value="1">Red</option>
+                    <option value="2">Orange</option>
+                    <option value="3">Yellow</option>
+                    <option value="4">Green</option>
+                    <option value="5">Blue</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q2">
+                    <option value="" disabled selected>Choose your warrior:</option>
+                    <option value="1">Pirate</option>
+                    <option value="2">Cowboy</option>
+                    <option value="3">Knight</option>
+                    <option value="4">Viking</option>
+                    <option value="5">Ninja</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q3">
+                    <option value="" disabled selected>Pick your poison.</option>
+                    <option value="1">Whiskey</option>
+                    <option value="2">Wine</option>
+                    <option value="3">Beer</option>
+                    <option value="4">Milk</option>
+                    <option value="5">Soy Milk</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q4">
+                    <option value="" disabled selected>Spicy or sweet?</option>
+                    <option value="1">Ouch!</option>
+                    <option value="2">Spicy</option>
+                    <option value="3">Tangy</option>
+                    <option value="4">Interesting</option>
+                    <option value="5">Sweet</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q5">
+                    <option value="" disabled selected>Obviously....</option>
+                    <option value="1">Umbrella</option>
+                    <option value="2">Geese</option>
+                    <option value="3">Paper Bags</option>
+                    <option value="4">Wind Tunnel</option>
+                    <option value="5">Tuba</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q6">
+                    <option value="" disabled selected>What are you doing Friday Night?</option>
+                    <option value="1">In bed with a good book</option>
+                    <option value="2">Meal Prep</option>
+                    <option value="3">Running for office</option>
+                    <option value="4">Netflix and Chill... all alone</option>
+                    <option value="5">Bungee Jumping</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q7">
+                    <option value="" disabled selected>Zombie Apocalypse</option>
+                    <option value="1">Finger Guns</option>
+                    <option value="2">Running Quickly</option>
+                    <option value="3">Chain Saw</option>
+                    <option value="4">Shotgun</option>
+                    <option value="5">Lasers</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q8">
+                    <option value="" disabled selected>Hot or Cold?</option>
+                    <option value="1">Cold</option>
+                    <option value="2">Goosebumps</option>
+                    <option value="3">Lukewarm</option>
+                    <option value="4">Freezerburn</option>
+                    <option value="5">Hot</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q9">
+                    <option value="" disabled selected>Late or Early</option>
+                    <option value="1">Wizards arrive precisely when they mean to</option>
+                    <option value="2">Tempus Fugit</option>
+                    <option value="3">No Time like the Present</option>
+                    <option value="4">Yesterday</option>
+                    <option value="5">Time is an illusion</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="q10">
+                    <option value="" disabled selected>Are you kidding?!</option>
+                    <option value="1">No, I'm for real.</option>
+                    <option value="2">Joke's on you.</option>
+                    <option value="3">No really.</option>
+                    <option value="4">Ya don't say?</option>
+                    <option value="5">This has been sooo many questions UGH</option>
+                  </select>
+                </div>
+              </div>
+
+              <!--Submission and Modal-->
+              <button data-target="popup" class="btn teal darken-2 waves-effect waves-light modal-trigger" name="action">Submit
+              </button>
+              <div id="popup" class="modal">
+                <div id="best-match" class="modal-content">
+                  <h4>Your Kindred Spirit is:</h4>
+                </div>
+                  <div class="modal-footer">
+                    <a href="./home" class="modal-close waves-effect waves-red">HOME</a>
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- Script for popup and data send/receive -->
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('select').formSelect();
+      $('.modal').modal();
+  });
+
+  //On Button Click
+  $(".modal-trigger").on("click", function(event) {
+    event.preventDefault();
+    
+    //Grab form info
+    var newFriend = {
+      name: $("#friend-name").val().trim(),
+      photo: $("#friend-photo").val().trim(),
+      scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+    };
+
+    //POST request to /api/friends
+    //pushes newFriend object to allFriends array  
+    $.post("api/friends", newFriend,
+      function (data) {
+        //console.log(data);
+        //Returns info to Modal
+        if (data) {
+          var bestMatch = $("#best-match");
+          bestMatch.append($("<h3>").text(data.name + "!"));
+          var matchImage = $("<img>");
+          matchImage.attr("src", data.photo);
+          matchImage.addClass("responsive-img");
+          bestMatch.append(matchImage);
+        }
+        else {
+          alert("Error. Please resubmit the survey.");
+        }
+      });
+
+    //resets form and we're done!
+    document.getElementById("new-friend").reset();
+  });
+</script>  
